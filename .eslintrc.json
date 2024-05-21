@@ -1,0 +1,63 @@
+{
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "overrides": [
+    {
+      "env": {
+        "node": true
+      },
+      "files": [".eslintrc.{js,cjs}"],
+      "parserOptions": {
+        "sourceType": "script"
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prettier", "@typescript-eslint", "react"
+  ],
+  "rules": {
+    "prettier/prettier": ["error", {
+      "endOfLine": "auto",
+      "singleQuote": true,
+      "printWidth": 120,
+      "singleAttributePerLine": true
+    }],
+    "react/react-in-jsx-scope": "off",
+    "react/display-name": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/triple-slash-reference": "off",
+    "indent": ["error", 2],
+    "max-len": ["error", { "code": 200 }],
+    "react/jsx-curly-brace-presence": [
+      "error",
+      { "props": "never", "children": "never" }
+    ],
+    "newline-before-return": "error",
+    "no-console": "error",
+    "no-multiple-empty-lines": [
+      "error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
+    "no-multi-spaces": "error",
+    "no-var": "error",
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "semi": [2, "always"],
+    "object-curly-spacing": ["error", "always"],
+    "prefer-const": "error",
+    "eol-last": ["error", "always"],
+    "padded-blocks": ["error", "never"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "keyword-spacing": ["error", { "after": true }],
+    "comma-dangle": ["error", "always-multiline"]
+  }
+}
