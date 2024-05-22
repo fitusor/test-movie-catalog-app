@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
+    "module": "commonjs",
+    "jsx": "react",
+    "esModuleInterop": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -10,11 +13,8 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "esModuleInterop": true,
-    "module": "commonjs",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
     "paths": {

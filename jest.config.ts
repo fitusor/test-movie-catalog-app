@@ -5,6 +5,10 @@
 
 module.exports = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  transform: {
+    '^.+\\.tsx?$': 'babel-jest',
+  },
+  preset: 'ts-jest/presets/default-esm',
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 

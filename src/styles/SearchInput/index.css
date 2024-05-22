@@ -1,0 +1,16 @@
+.search-input {
+    min-width: 300px;
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    padding: 8px 10px;
+    font-size: 1rem;
+    background: #FFF;
+    outline: none;
+    order: 2;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        order: 3;
+    }
+}

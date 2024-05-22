@@ -1,0 +1,30 @@
+.user-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    order: 3;
+
+    @media (max-width: 768px) {
+        order: 2;
+    }
+}
+
+.user-info > img {
+    width: 20px;
+    height: 20px;
+
+    @media (max-width: 640px) {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.user-info > p {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    @media (max-width: 640px) {
+        font-size: 1rem;
+    }
+}
+

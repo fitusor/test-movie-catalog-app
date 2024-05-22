@@ -1,0 +1,13 @@
+h2 {
+    padding: 30px 0;
+    line-height: 1.5;
+
+    @media (max-width: 640px) {
+        font-size: 1.25rem;
+        padding: 20px 0;
+    }
+
+    @media (max-width: 335px) {
+        padding: 20px 0;
+    }
+}

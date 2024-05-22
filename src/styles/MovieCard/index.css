@@ -1,0 +1,68 @@
+.movie-card {
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    animation: fadeInMove .5s ease;
+
+    @media (max-width: 865px) {
+        width: 100%;
+    }
+
+    @media (max-width: 430px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.movie-card img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+    animation: fadeIn .5s ease-in-out;
+}
+
+.movie-card-img {
+    width: 200px;
+    height: 220px;
+}
+
+.movie-card-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+
+    @media (max-width: 430px) {
+        width: 100%;
+    }
+}
+
+.movie-card-text > p {
+    line-height: 1.5;
+}
+
+@keyframes fadeInMove {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

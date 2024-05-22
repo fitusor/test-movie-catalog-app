@@ -1,0 +1,71 @@
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+}
+
+.page-link {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.page-dots {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.page-dots:hover, .page-link.page-dots:hover{
+    background-color: transparent;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-link:hover {
+    background-color: #e9ecef;
+}
+
+.pagination-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pagination-input > input {
+    min-width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    padding: 8px 10px;
+    font-size: 1rem;
+    background: #FFF;
+    outline: none;
+
+    @media (max-width: 430px) {
+        width: 100%;
+    }
+}
+
+.pagination-input > button {
+    font-size: 1rem;
+    padding: 8px 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
